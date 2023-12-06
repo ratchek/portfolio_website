@@ -65,7 +65,7 @@ class SiteGenerator(object):
 # Main execution block.
 if __name__ == "__main__":
     # Instantiate site generator
-    sb = SiteGenerator()
+    sb = SiteGenerator(static_dir="assets")
 
     # Generate the site
     sb.generate()
