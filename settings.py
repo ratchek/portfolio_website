@@ -15,3 +15,20 @@ SOCIAL_LINKS = [
     ("brands fa-github", "#", "Github"),
     ("solid fa-file", "#", "Download my resume"),
 ]
+
+DJANGO_PROJECTS = [
+    {
+        "title": "And I'm a freelance Django developer.",
+        "blurb": "<p>Hi from the blurb!</p>",
+        "image": "pic10.jpg",
+        "github_link": "https://github.com/ratchek",
+        "project_link": "https://www.google.com/",
+    },
+    {
+        "title": "And I'm a freelance Django developer.",
+        "blurb": "<p>Hi from the blurb!</p>",
+        "image": "pic10.jpg",
+        "github_link": "https://github.com/ratchek",
+        "project_link": "https://www.google.com/",
+    },
+]

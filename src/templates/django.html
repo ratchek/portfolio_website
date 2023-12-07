@@ -1,7 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
+    {% set image_position = cycler("right", "left") %}
+    {% for project in django %}
+        <!-- Banner -->
+        <section id="banner">
+            {% if image_position.current == "left" %}
+                {% include "project_image.html" %}
+            {% endif %}
 
-    {% include "project_1.html" %}
-    {% include "project_2.html" %}
+            <div class="content">
+                <header>
+                    <p>{{project.title}}</p>
+                </header>
+                {{project.blurb}}
+                <ul class="actions">
+                    {% if project.github_link %}
+                    <li><a href={{project.github_link}} class="button primary big">Github</a></li>
+                    {%endif%}
 
+                    {%if project.project_link %}
+                    <li><a href={{project.project_link}} class="button big">Project website</a></li>
+                    {%endif%}
+                </ul>
+            </div>
+            {% if image_position.current == "right" %}
+                {% include "project_image.html" %}
+            {% endif %}
+            {% set _ = image_position.next() %}
+        </section>
+
+
+    {% endfor %}
+    
+    
 {% endblock content %}
