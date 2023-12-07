@@ -3526,6 +3526,10 @@ button:disabled,
   width: 50%;
 }
 
+#banner .image.projects-left {
+  margin: 0 4em 2em 0;
+}
+
 #banner .image img {
   height: 100%;
   -moz-object-fit: cover;
