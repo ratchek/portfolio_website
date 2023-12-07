@@ -81,4 +81,6 @@ if __name__ == "__main__":
     )
 
     # Generate the site
-    sb.generate()
+    sb.generate(
+        socials=settings.SOCIAL_LINKS,
+    )
