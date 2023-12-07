@@ -8,6 +8,7 @@
                 {% include "project_image.html" %}
             {% endif %}
 
+
             <div class="content">
                 <header>
                     <p>{{project.title}}</p>
@@ -22,7 +23,21 @@
                     <li><a href={{project.project_link}} class="button big">Project website</a></li>
                     {%endif%}
                 </ul>
+
+                <div class="box alt">
+                    <div class="row gtr-100 gtr-uniform">
+                    {% for pic in project.gallery %}
+                        <div class="col-4">
+                            <span class="image fit">
+                                <a href="assets/images/{{pic}}" data-lightbox={{project.title}}><img src="assets/images/{{pic}}"></a>
+                            </span>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
             </div>
+
+
             {% if image_position.current == "right" %}
                 {% include "project_image.html" %}
             {% endif %}
@@ -31,6 +46,5 @@
 
 
     {% endfor %}
-    
     
 {% endblock content %}

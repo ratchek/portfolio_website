@@ -18,17 +18,25 @@ SOCIAL_LINKS = [
 
 DJANGO_PROJECTS = [
     {
-        "title": "And I'm a freelance Django developer.",
-        "blurb": "<p>Hi from the blurb!</p>",
-        "image": "pic10.jpg",
-        "github_link": "https://github.com/ratchek",
-        "project_link": "https://www.google.com/",
+        "title": "Door2Door",
+        "blurb": "<p>An online tracking system for real estate canvasing built in Django. Integrates the NYC Housing Preservation & Development database to speed up search for property owners.</p>",
+        "main_image": "d2d-main.png",
+        "github_link": "https://github.com/ratchek/door2door",
+        "project_link": "https://door2door.nyc/",
+        "gallery": [
+            "d2d-2.png",
+            "d2d-4.png",
+            "d2d-5.png",
+            "d2d-1.png",
+            "d2d-3.png",
+        ],
     },
     {
         "title": "And I'm a freelance Django developer.",
         "blurb": "<p>Hi from the blurb!</p>",
-        "image": "pic10.jpg",
+        "main_image": "d2d-main.png",
         "github_link": "https://github.com/ratchek",
         "project_link": "https://www.google.com/",
+        "gallery": ["d2d-1.png", "d2d-2.png", "d2d-3.png", "d2d-4.png", "d2d-5.png"],
     },
 ]
