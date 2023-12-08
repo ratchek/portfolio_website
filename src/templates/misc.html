@@ -1,53 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-    {% set image_position = cycler("right", "left") %}
+    <section>
+    <h1 id="content">Miscellaneous</h1>
+    <p>This section of my portfolio showcases a diverse collection of scripts and projects, each reflecting the initial steps and experiments that have contributed to my evolving journey as a developer. While each piece holds its unique place in my learning curve, they collectively represent the foundational experiences that have shaped my current expertise.</p>
+    <div class="row">
     {% for project in misc %}
-        <!-- Banner -->
-        <section id="banner">
-            {% if image_position.current == "left" %}
-                {% include "project_image.html" %}
-            {% endif %}
-
-
-            <div class="content">
-                <header>
+        <div class="col-6 col-12-small">
                     <h3>{{project.title}}</h3>
-                </header>
                 {{project.blurb}}
                 <ul class="actions">
                     {% if project.github_link %}
-                    <li><a href={{project.github_link}} class="button primary big">Github</a></li>
+                    <li><a href={{project.github_link}} class="button primary small">Github</a></li>
                     {%endif%}
 
                     {%if project.project_link %}
-                    <li><a href={{project.project_link}} class="button big">Project website</a></li>
+                    <li><a href={{project.project_link}} class="button small">Project website</a></li>
                     {%endif%}
                 </ul>
 
-                                <header>
-                    <p>Gallery</p>
-                </header>
-                <div class="box alt">
-                    <div class="row gtr-100 gtr-uniform">
-                    {% for pic in project.gallery %}
-                        <div class="col-4">
-                            <span class="image fit">
-                                <a href="assets/images/{{pic}}" data-lightbox={{project.title}}><img src="assets/images/{{pic}}"></a>
-                            </span>
-                        </div>
-                    {% endfor %}
-                    </div>
-                </div>
-            </div>
 
-
-            {% if image_position.current == "right" %}
-                {% include "project_image.html" %}
-            {% endif %}
-            {% set _ = image_position.next() %}
-        </section>
-
-
+        </div>
     {% endfor %}
+    </div>
+    </section>
     
 {% endblock content %}
