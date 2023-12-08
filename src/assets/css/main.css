@@ -3542,7 +3542,7 @@ button:disabled,
 }
 
 #banner .image img {
-  height: 100%;
+  height: auto;
   -moz-object-fit: cover;
   -webkit-object-fit: cover;
   -ms-object-fit: cover;
