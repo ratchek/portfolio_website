@@ -27,41 +27,75 @@ DJANGO_PROJECTS = [
             "d2d-3.png",
         ],
     },
+    {
+        "title": "OLC",
+        "blurb": "<p>Ported a static website into a Django webapp to increase ease of use, security, and loading times. The new website allows for administrators to login and dynamically upload content like parish forms and weekly bulletins. </p>",
+        "main_image": "olc-2.png",
+        "github_link": "https://github.com/ratchek/door2door",
+        "project_link": "https://door2door.nyc/",
+        "gallery": [
+            "olc-1.png",
+            "olc-2.png",
+            "olc-3.png",
+        ],
+    },
 ]
 
 # List of projects in the 'django' category
 OPEN_SOURCE_PROJECTS = [
     {
-        "title": "Door2Door",
-        "blurb": "<p>An online tracking system for real estate canvasing built in Django. Integrates the NYC Housing Preservation & Development database to speed up search for property owners.</p>",
-        "main_image": "d2d-main.png",
-        "github_link": "https://github.com/ratchek/door2door",
-        "project_link": "https://door2door.nyc/",
-        "gallery": [
-            "d2d-2.png",
-            "d2d-4.png",
-            "d2d-5.png",
-            "d2d-1.png",
-            "d2d-3.png",
-        ],
+        "title": "Vorta",
+        "blurb": "<p>Vorta is an open-source GUI interface for Borg, a deduplication backup tool. I created a development mode which sandboxes settings and temporary files during development from the operating system's main instance of the program. This is useful for developers that want to work on the software without having to manually backup the settings and files of the instance they use to perform the actual backups on their computers.</p> <p> I also submitted a PR that fixed a bug during the development setup process and I updated the website's contribution guide to include omitted steps improving the chances that new developers will stick with the project instead of getting discouraged.</p>",
+        "main_image": "vorta-main.gif",
+        "github_link": "https://github.com/borgbase/vorta/commits?author=ratchek",
+        "project_link": "https://vorta.borgbase.com/",
+        "gallery": [],
     },
 ]
 
 # List of projects in the 'django' category
 MISC_PROJECTS = [
     {
-        "title": "Door2Door",
-        "blurb": "<p>An online tracking system for real estate canvasing built in Django. Integrates the NYC Housing Preservation & Development database to speed up search for property owners.</p>",
+        "title": "Colornote to Joplin",
+        "blurb": "<p>This is a script that allows you to import notes from Colornote into Joplin. The main selling point is that it preserves the creation and modification dates for each note as well as the folder structure. It also allows for batch importing</p>",
         "main_image": "d2d-main.png",
-        "github_link": "https://github.com/ratchek/door2door",
-        "project_link": "https://door2door.nyc/",
-        "gallery": [
-            "d2d-2.png",
-            "d2d-4.png",
-            "d2d-5.png",
-            "d2d-1.png",
-            "d2d-3.png",
-        ],
+        "github_link": "https://github.com/ratchek/colornote_to_joplin",
+        "gallery": [],
+    },
+    {
+        "title": "Gesture Counter",
+        "blurb": "<p>A Python program that funcions as a hands free counter. Controlled with head gestures.Uses cv2 and dlib</p>",
+        "main_image": "d2d-main.png",
+        "github_link": "https://github.com/ratchek/gesture_counter_2.0",
+        "gallery": [],
+    },
+    {
+        "title": "o2cm Database",
+        "blurb": "<p>A program created to aid the staff of the Big Apple Dance Competition in putting together a comprehensive list of their competitors.</p>",
+        "main_image": "d2d-main.png",
+        "github_link": "https://github.com/ratchek/o2cmDatabase",
+        "gallery": [],
+    },
+    {
+        "title": "Watson integration for Telegram",
+        "blurb": "<p>Backend for a Telegram bot that allows you to query instances of Watson Assistant and Watson Discovery in real time. Written in NodeRed.</p>",
+        "main_image": "d2d-main.png",
+        "github_link": "https://github.com/ratchek/ChemicalPlantSafetyAssistant",
+        "gallery": [],
+    },
+    {
+        "title": "Anki Person Scraper",
+        "blurb": "<p>Input a list of people and you get an Anki deck of their names, photos, and short intros. Scrapes wikipedia, so make sure the person has a wikipedia page. </p>",
+        "main_image": "d2d-main.png",
+        "github_link": "https://github.com/ratchek/anki-person-scraper",
+        "gallery": [],
+    },
+    {
+        "title": "Goal and Reward Tracker",
+        "blurb": "<p>A simple webapp used to track goals, rewards, and goal timelines.</p>",
+        "main_image": "d2d-main.png",
+        "github_link": "https://github.com/ratchek/GoalCounter",
+        "gallery": [],
     },
 ]
 
