@@ -84,4 +84,6 @@ if __name__ == "__main__":
     sb.generate(
         socials=settings.SOCIAL_LINKS,
         django=settings.DJANGO_PROJECTS,
+        misc=settings.MISC_PROJECTS,
+        opensource=settings.OPEN_SOURCE_PROJECTS,
     )
