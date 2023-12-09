@@ -33,22 +33,17 @@
                 <h2>Recent</h2>
             </header>
             <div class="mini-posts">
-                <article>
-                    <a href="#" class="image"><img src="assets/images/pic07.jpg" alt="" /></a>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="assets/images/pic08.jpg" alt="" /></a>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-                </article>
-                <article>
-                    <a href="#" class="image"><img src="assets/images/pic09.jpg" alt="" /></a>
-                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-                </article>
+                {% for project in sidebar_projects %}
+                    <article>
+                        <a href="{{project.1}}#{{project.0.id}}" class="image"><img src="assets/images/{{project.0.main_image}}" alt="" /></a>
+                        <h3>{{project.0.title}}</h3>
+                        <p>{{project.0.blurb | striptags| first_sentence}}</p>
+                    </article>
+                    <ul class="actions">
+                        <li><a href="{{project.1}}#{{project.0.id}}" class="button">More</a></li>
+                    </ul>
+                {% endfor%}
             </div>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
         </section>
 
         <!-- Section -->

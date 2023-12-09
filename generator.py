@@ -6,6 +6,12 @@ from os.path import join, exists, getmtime
 import settings
 
 
+# Helper function that we'll use as a jinja filter.
+# Returns the first sentence of a string
+def get_first_sentence(s):
+    return s.split(".")[0] + "."
+
+
 # Class used to generate the site from the templates
 class SiteGenerator(object):
     # Instantiate the dirs and templates
@@ -57,6 +63,7 @@ class SiteGenerator(object):
 
         # Load Jinja2 environment
         env = Environment(loader=FileSystemLoader(os.path.join(self._root(), self.src_dir, self.template_dir)))
+        env.filters["first_sentence"] = get_first_sentence
 
         # For every template in the template_dir
         for template_name in self.template_list:
@@ -86,4 +93,5 @@ if __name__ == "__main__":
         django=settings.DJANGO_PROJECTS,
         misc=settings.MISC_PROJECTS,
         opensource=settings.OPEN_SOURCE_PROJECTS,
+        sidebar_projects=settings.SIDEBAR_LIST,
     )
