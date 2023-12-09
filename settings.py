@@ -6,9 +6,9 @@ OUTPUT_DIR = "output"
 # Tuples of (font awesome icon, href, string to display)
 SOCIAL_LINKS = [
     ("solid fa-envelope", "#", "Email me"),
-    ("brands fa-linkedin", "#", "LinkedIn"),
-    ("brands fa-github", "#", "Github"),
-    ("solid fa-file", "#", "Download my resume"),
+    ("brands fa-linkedin", "https://www.linkedin.com/in/thomas-raczkowski/", "LinkedIn"),
+    ("brands fa-github", "https://github.com/ratchek", "Github"),
+    ("solid fa-file", "assets/Thomas-Raczkowski-resume.pdf", "Download my resume"),
 ]
 
 # List of projects in the 'django' category
