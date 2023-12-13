@@ -1,13 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-    {% set image_position = cycler("right", "left") %}
     {% for project in opensource %}
         <!-- Banner -->
         <section id="banner">
-            {% if image_position.current == "left" %}
-                {% include "project_image.html" %}
-            {% endif %}
-
 
             <div class="content">
                 <header id={{project.id}}>
@@ -43,10 +38,9 @@
             </div>
 
 
-            {% if image_position.current == "right" %}
-                {% include "project_image.html" %}
-            {% endif %}
-            {% set _ = image_position.next() %}
+            <span class="image object">
+                <img src="assets/images/{{project.main_image}}" alt="" />
+            </span>            
         </section>
 
 
