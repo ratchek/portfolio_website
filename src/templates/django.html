@@ -1,49 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
     {% for project in django %}
-        <!-- Banner -->
-        <section id="banner">
-            
 
-            <div class="content">
-                <header id={{project.id}}>
-                    <h3>{{project.title}}</h3>
-                </header>
-                {{project.blurb}}
-                <ul class="actions">
-                    {% if project.github_link %}
-                    <li><a href={{project.github_link}} class="button primary big">Github</a></li>
-                    {%endif%}
-
-                    {%if project.project_link %}
-                    <li><a href={{project.project_link}} class="button big">Project website</a></li>
-                    {%endif%}
-                </ul>
-
-                {% if project.gallery is defined and project.gallery|length>0 %}
-                    <header>
-                        <p>Gallery</p>
-                    </header>
-                    <div class="box alt">
-                        <div class="row gtr-100 gtr-uniform">
-                        {% for pic in project.gallery %}
-                            <div class="col-4">
-                                <span class="image fit">
-                                    <a href="assets/images/{{pic}}" data-lightbox={{project.title}}><img src="assets/images/{{pic}}"></a>
-                                </span>
-                            </div>
-                        {% endfor %}
-                        </div>
-                    </div>
-                {% endif %}
-            </div>
-
-
-            <span class="image object">
-                <img src="assets/images/{{project.main_image}}" alt="" />
-            </span>       
-        </section>
-
+        {% include "project_banner.html" %}
 
     {% endfor %}
     
