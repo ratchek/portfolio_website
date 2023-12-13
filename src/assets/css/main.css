@@ -168,7 +168,7 @@ body {
   -ms-overflow-style: scrollbar;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
 
   html,
   body {
@@ -1634,7 +1634,7 @@ hr.major {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -2535,7 +2535,7 @@ ul.pagination li:last-child {
   padding-left: 0.75em;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
   ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
     display: none;
   }
@@ -2902,7 +2902,7 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
   .features article {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
@@ -2932,7 +2932,7 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
   .features article .icon:before {
     font-size: 1.25rem;
   }
@@ -3091,7 +3091,7 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
   .posts {
     margin: 0 0 2em 0;
     width: 100%;
@@ -3554,7 +3554,7 @@ button:disabled,
   width: 100%;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 510px) {
   #banner {
     -moz-flex-direction: column-reverse;
     -webkit-flex-direction: column-reverse;
