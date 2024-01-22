@@ -33,8 +33,7 @@ DJANGO_PROJECTS = [
         "id": "olc",
         "blurb": "<p>Ported a static website into a Django webapp to increase ease of use, security, and loading times. The new website allows for administrators to login and dynamically upload content like parish forms and weekly bulletins. </p>",
         "main_image": "olc-2.webp",
-        "github_link": "https://github.com/ratchek/door2door",
-        "project_link": "https://door2door.nyc/",
+        "project_link": "https://olc-brooklyn.com/",
         "gallery": [
             "olc-1.webp",
             "olc-2.webp",
