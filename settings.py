@@ -18,6 +18,7 @@ DJANGO_PROJECTS = [
         "id": "door2door",
         "blurb": "<p>An online tracking system for real estate canvasing built in Django. Integrates the NYC Housing Preservation & Development database to speed up search for property owners.</p>",
         "main_image": "d2d-main.webp",
+        "nav_image": "d2d-main.webp",
         "github_link": "https://github.com/ratchek/door2door",
         "project_link": "https://door2door.nyc/",
         "gallery": [
@@ -33,6 +34,7 @@ DJANGO_PROJECTS = [
         "id": "olc",
         "blurb": "<p>Ported a static website into a Django webapp to increase ease of use, security, and loading times. The new website allows for administrators to login and dynamically upload content like parish forms and weekly bulletins. </p>",
         "main_image": "olc-2.webp",
+        "nav_image": "olc-2.webp",
         "project_link": "https://olc-brooklyn.com/",
         "gallery": [
             "olc-1.webp",
@@ -49,6 +51,7 @@ OPEN_SOURCE_PROJECTS = [
         "id": "vorta",
         "blurb": "<p>Vorta is an open-source GUI interface for a deduplication backup tool called Borg. I created a development mode which sandboxes settings and temporary files during development from the operating system's main instance of the program. This is useful for developers that want to work on the software without having to manually backup the settings and files of the instance they use to perform the actual backups on their computers.</p> <p> I also submitted a PR that fixed a bug during the development setup process and I updated the website's contribution guide to include omitted steps improving the chances that new developers will stick with the project instead of getting discouraged.</p>",
         "main_image": "vorta-main.gif",
+        "nav_image": "vorta-main.webp",
         "github_link": "https://github.com/borgbase/vorta/commits?author=ratchek",
         "project_link": "https://vorta.borgbase.com/",
         "gallery": [],
