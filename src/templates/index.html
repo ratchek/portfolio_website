@@ -17,7 +17,14 @@
             </ul>
         </div>
         <span class="image object">
-            <img src="assets/images/profile.webp" alt="" />
+            <picture>
+                <!-- Mobile Image -->
+                <source media="(max-width: 600px)" srcset="assets/images/mobile/profile.webp">
+                <!-- Desktop Image -->
+                <source media="(min-width: 601px)" srcset="assets/images/profile.webp">
+                <!-- Fallback Image -->
+                <img aria-hidden="true"  decoding="async" src="assets/images/profile.webp" alt="profile photo" >
+            </picture>
         </span>
     </section>
 

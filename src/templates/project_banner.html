@@ -26,7 +26,14 @@
                         {% for pic in project.gallery %}
                             <div class="col-4">
                                 <span class="image fit">
-                                    <a href="assets/images/{{pic}}" data-lightbox={{project.title}}><img src="assets/images/small/{{pic}}"></a>
+                                    <a href="assets/images/{{pic}}" data-lightbox={{project.title}}>
+
+                                        <picture>
+                                            <source media="(max-width: 600px)" srcset="assets/images/mobile/small/{{pic}}">
+                                            <source media="(min-width: 601px)" srcset="assets/images/small/{{pic}}">
+                                            <img aria-hidden="true" loading="lazy" decoding="async" src="assets/images/small/{{pic}}" alt="Image of {{project.title}} app">
+                                        </picture>                    
+                                    </a>
                                 </span>
                             </div>
                         {% endfor %}
@@ -35,8 +42,13 @@
                 {% endif %}
             </div>
 
-
             <span class="image object">
-                <a href="assets/images/{{project.main_image}}" data-lightbox={{project.title}}><img src="assets/images/{{project.main_image}}" alt="" /></a>
+                <a href="assets/images/{{project.main_image}}" data-lightbox={{project.title}}>
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="assets/images/mobile/{{project.main_image}}">
+                        <source media="(min-width: 601px)" srcset="assets/images/{{project.main_image}}">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="assets/images/{{project.main_image}}" alt="Image of {{project.title}} app"> 
+                    </picture>                    
+                </a>
             </span>       
         </section>

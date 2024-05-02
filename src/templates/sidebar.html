@@ -35,7 +35,12 @@
             <div class="mini-posts">
                 {% for project in sidebar_projects %}
                     <article>
-                        <a href="{{project.1}}#{{project.0.id}}" class="image"><img src="assets/images/nav/{{project.0.nav_image}}" alt="Image of {{project.0.title}} project" /></a>
+                        <a href="{{project.1}}#{{project.0.id}}" class="image">
+                            <picture>
+                                <source media="(max-width: 600px)" srcset="assets/images/mobile/nav/{{project.0.nav_image}}">
+                                <source media="(min-width: 601px)" srcset="assets/images/nav/{{project.0.nav_image}}">
+                                <img aria-hidden="true" decoding="async" src="assets/images/nav/{{project.0.nav_image}}" alt="Image of {{project.0.title}} project" >
+                        </a>
                         <h3>{{project.0.title}}</h3>
                         <p>{{project.0.blurb | striptags| first_sentence}}</p>
                     </article>
