@@ -14,6 +14,19 @@ SOCIAL_LINKS = [
 # List of projects in the 'django' category
 DJANGO_PROJECTS = [
     {
+        "title": "ChoirHub",
+        "id": "choirhub",
+        "blurb": "<p>A webapp for managing choir music. Includes support for scores, recordings, voice groupings, and choir events.</p>",
+        "main_image": "choirhub.webp",
+        "nav_image": "choirhub.webp",
+        "project_link": "https://choirhub.ratchek.com/",
+        "gallery": [
+            "choirhub-1.webp",
+            "choirhub-3.webp",
+            "choirhub-2.webp",
+        ],
+    },
+    {
         "title": "Door2Door",
         "id": "door2door",
         "blurb": "<p>An online tracking system for real estate canvasing built in Django. Integrates the NYC Housing Preservation & Development database to speed up search for property owners.</p>",
